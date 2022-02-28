@@ -1,4 +1,10 @@
+@import "_nullstyle";
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap");
+
+/*-------------------------------------------------------------*/
+/*-----The Foundation------------------------------------------*/
+/*-------------------------------------------------------------*/
+
 input::-moz-placeholder {
   color: #ffffff;
 }
@@ -13,10 +19,57 @@ textarea::-webkit-input-placeholder {
 }
 
 body {
-  max-width: 1441px;
-  margin: 0 auto;
   font-family: "Titillium Web";
 }
+
+/*-------------------------------------------------------------*/
+/*-----Technical classes---------------------------------------*/
+/*-------------------------------------------------------------*/
+
+._container {
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+._wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._title {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+  &::after {
+    content: "";
+    opacity: 0.5;
+    width: 90px;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: black;
+    margin: 0px 0px -5px -40px;
+  }
+  margin-bottom: 20px;
+}
+
+._subtitle {
+  line-height: 25px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 
 .title {
   color: #ffffff;
@@ -166,77 +219,57 @@ body {
   }
 }
 
-.block-3 {
+/*-------------------------------------------------------------*/
+/*-----Team----------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.team {
   background-color: #e7f1f8;
-  height: 915px;
-  &__body {
-    max-width: 603px;
-    margin: 0 auto;
-  }
-  &__header {
-    margin-bottom: 80px;
-  }
-  &__title {
-    color: #3c4761;
-    margin: 0px auto 30px auto;
-    padding-top: 120px;
-  }
-  &__text {
-    color: #3c4761;
-  }
-  &__row {
-    display: flex;
-  }
-  &__column {
-    flex: 0 0 25%;
-  }
-}
+  padding: 60px 10px;
 
-.item-3 {
-  &__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 125px;
-  }
   &__title {
-    color: #27283d;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 65px;
-    margin-bottom: 15px;
-  }
-  &__mini-title {
-    text-align: center;
-    color: #30bae7;
-    font-size: 16px;
-    margin-top: 15px;
-    margin-bottom: 27px;
-  }
-  &__text {
     color: #3c4761;
-    text-align: center;
-    margin: 0 auto;
-    width: 200px;
-    height: 112px;
-    font-size: 16px;
-    margin-bottom: 20px;
   }
-  &__social-links {
-    margin: 0 auto;
+
+  &__subtitle {
     color: #3c4761;
-    text-align: center;
-    width: 166px;
-    height: 35px;
-    font-size: 16px;
-    img {
-      padding-right: 6px;
-      &:last-child {
-        padding-right: 0px;
-      }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px 30px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .item__image {
+      margin-bottom: 20px;
+    }
+    .item__title {
+      color: #3c4761;
+      margin: 0px 0px 20px 0px;
+    }
+    .item__subtitle {
+      color: #30bae7;
+      margin-bottom: 15px;
+    }
+    .item__text {
+      color: #3c4761;
+      margin-bottom: 30px;
+    }
+    .item__links {
     }
   }
 }
+
+/*-------------------------------------------------------------*/
+/*-----Skills--------------------------------------------------*/
+/*-------------------------------------------------------------*/
 
 .block-4 {
   background-color: #ffffff;
