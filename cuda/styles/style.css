@@ -297,65 +297,62 @@ body {
   background-color: #17c2a4;
 }
 
-.block-2 {
+/*-------------------------------------------------------------*/
+/*-----Services------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.services {
   background-color: #17c2a4;
-  height: 748px;
-}
-
-.block-2__body {
-  max-width: 603px;
-  margin: 0 auto;
-}
-
-.block-2__header {
-  margin-bottom: 80px;
-}
-
-.block-2__title {
   color: #ffffff;
-  margin: 0px auto 30px auto;
-  padding-top: 120px;
+  padding: 60px 10px;
 }
 
-.block-2__row {
+.services__subtitle {
+  margin: 0px auto 40px auto;
+  max-width: 700px;
+}
+
+.services__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.block-2__column {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-}
-
-.item__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 125px;
+  gap: 20px 50px;
 }
 
-.item__title {
-  color: #ffffff;
-  font-size: 24px;
-  text-align: center;
-  margin-top: 65px;
-  margin-bottom: 40px;
+.services__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.item__text {
-  color: #ffffff;
-  margin: 0 auto;
-  width: 200px;
-  height: 64px;
-  font-size: 16px;
+.services__item .item__image {
+  margin-bottom: 20px;
+}
+
+.services__item .item__title {
+  margin: 0px 0px 20px 0px;
+}
+
+.services__item .item__text {
+  margin-bottom: 30px;
+  max-width: 200px;
 }
 
 /*-------------------------------------------------------------*/
@@ -383,10 +380,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px 50px;
 }
 
 .team__item {
@@ -400,6 +397,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  height: 100%;
 }
 
 .team__item .item__image {

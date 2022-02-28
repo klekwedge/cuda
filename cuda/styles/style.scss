@@ -173,55 +173,52 @@ body {
   }
 }
 
-.block-2 {
+/*-------------------------------------------------------------*/
+/*-----Services------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.services {
   background-color: #17c2a4;
-  height: 748px;
-  &__body {
-    max-width: 603px;
-    margin: 0 auto;
+  color: #ffffff;
+  padding: 60px 10px;
+
+  &__subtitle {
+    margin: 0px auto 40px auto;
+    max-width: 700px;
   }
-  &__header {
-    margin-bottom: 80px;
-  }
-  &__title {
-    color: #ffffff;
-    margin: 0px auto 30px auto;
-    padding-top: 120px;
-  }
-  &__row {
+
+  &__list {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px 50px;
   }
-  &__column {
-    flex: 0 0 25%;
+
+  &__item {
+    flex: 0 1 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .item__image {
+      margin-bottom: 20px;
+    }
+    .item__title {
+      margin: 0px 0px 20px 0px;
+    }
+
+    .item__text {
+      margin-bottom: 30px;
+      max-width: 200px;
+    }
   }
 }
 
-.item {
-  &__icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 125px;
-  }
-  &__title {
-    color: #ffffff;
-    font-size: 24px;
-    text-align: center;
-    margin-top: 65px;
-    margin-bottom: 40px;
-  }
-  &__text {
-    color: #ffffff;
-    margin: 0 auto;
-    width: 200px;
-    height: 64px;
-    font-size: 16px;
-  }
-}
 
 /*-------------------------------------------------------------*/
 /*-----Team----------------------------------------------------*/
 /*-------------------------------------------------------------*/
+
 .team {
   background-color: #e7f1f8;
   padding: 60px 10px;
@@ -238,15 +235,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px 30px;
+    justify-content: center;
+    gap: 20px 50px;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    flex: 0 1 20%;
+    height: 100%;
     .item__image {
       margin-bottom: 20px;
     }
