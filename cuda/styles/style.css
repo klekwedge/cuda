@@ -243,7 +243,7 @@ body {
 .menu__item a {
   color: white;
   font-size: 24px;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .menu__item a:hover {
@@ -252,78 +252,14 @@ body {
 }
 
 /*-------------------------------------------------------------*/
-/*-----Home-------------------------------------------------*/
+/*-----Home----------------------------------------------------*/
 /*-------------------------------------------------------------*/
-.block-1 {
+.page__home {
   background-color: #87509c;
-  height: 597px;
+  padding: 200px 10px 100px 10px;
 }
 
-.block-1__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.block-1__logo {
-  width: 119px;
-  height: 38px;
-  padding: 56px 0 0 210px;
-}
-
-.block-1__menu {
-  width: 416px;
-  height: 13px;
-  margin-top: 70px;
-  margin-right: 196px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.block-1__item {
-  margin: 0 auto;
-  font-size: 16px;
-  line-height: 18px;
-  color: #ffffff;
-  font-weight: 400;
-  font-family: "Titillium Web";
-  display: block;
-  padding: 11px 18px;
-}
-
-.block-1__item:hover {
-  background-color: #643a79;
-  border-radius: 5px;
-}
-
-.block-1 a {
-  line-height: 18px;
-  color: #ffffff;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.block-1__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 906px;
-  height: 88px;
-  margin: 147px auto 70px auto;
+.home__container {
   font-size: 35px;
   font-weight: bold;
   line-height: 49px;
@@ -331,25 +267,22 @@ body {
   text-align: center;
 }
 
-.block-1__block-button {
-  width: 295px;
-  height: 71px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.home__title {
+  margin: 80px auto 90px auto;
+  max-width: 800px;
 }
 
-.block-1__button {
+.home__button {
   background-color: #eb7d4b;
   color: #ffffff;
   font-size: 13;
-  padding: 29px 83px;
+  padding: 25px 70px;
+  border-radius: 5px;
   -webkit-transition-duration: 0.6s;
           transition-duration: 0.6s;
 }
 
-.block-1__button:hover {
+.home__button:hover {
   background-color: #17c2a4;
 }
 

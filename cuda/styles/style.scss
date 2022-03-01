@@ -130,89 +130,45 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px 20px;
-  //justify-content: space-between;
 }
 .menu__item a{
   color: white;
   font-size: 24px;
-  padding: 5px;
+  padding: 5px 10px;
   &:hover {
     background-color: #643a79;
     border-radius: 5px;
   }
 }
 /*-------------------------------------------------------------*/
-/*-----Home-------------------------------------------------*/
+/*-----Home----------------------------------------------------*/
 /*-------------------------------------------------------------*/
-.block-1 {
+.page__home {
   background-color: #87509c;
-  height: 597px;
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__logo {
-    width: 119px;
-    height: 38px;
-    padding: 56px 0 0 210px;
-  }
-  &__menu {
-    width: 416px;
-    height: 13px;
-    margin-top: 70px;
-    margin-right: 196px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  &__item {
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 18px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Titillium Web";
-    display: block;
-    padding: 11px 18px;
-    &:hover {
-      background-color: #643a79;
-      border-radius: 5px;
-    }
-  }
-  a {
-    line-height: 18px;
-    color: #ffffff;
-    font-size: 16px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  &__text {
-    display: flex;
-    width: 906px;
-    height: 88px;
-    margin: 147px auto 70px auto;
-    font-size: 35px;
-    font-weight: bold;
-    line-height: 49px;
-    color: #f7f3ea;
-    text-align: center;
-  }
-  &__block-button {
-    width: 295px;
-    height: 71px;
-    margin: 0 auto;
-    display: flex;
-  }
-  &__button {
-    background-color: #eb7d4b;
-    color: #ffffff;
-    font-size: 13;
-    padding: 29px 83px;
-    transition-duration: 0.6s;
-    &:hover {
-      background-color: #17c2a4;
-    }
+  padding: 200px 10px 100px 10px;
+}
+
+.home__container {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 49px;
+  color: #f7f3ea;
+  text-align: center;
+}
+
+.home__title {
+  margin: 80px auto 90px auto;
+  max-width: 800px;
+}
+.home__button {
+  background-color: #eb7d4b;
+  color: #ffffff;
+  font-size: 13;
+  padding: 25px 70px;
+  border-radius: 5px;
+  transition-duration: 0.6s;
+  &:hover {
+    background-color: #17c2a4;
   }
 }
 
