@@ -135,7 +135,7 @@ body {
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 4px;
-  line-height: 30px;
+  line-height: 100%;
   text-align: center;
   text-transform: uppercase;
   position: relative;
@@ -785,41 +785,31 @@ body {
   background-color: #344b8e;
 }
 
-.footer__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 113px;
+.footer__container {
+  padding: 40px 10px;
 }
 
-.footer__links {
+.footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
-  -webkit-filter: hue-rotate(90deg);
-          filter: hue-rotate(90deg);
-  width: 938px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 20px;
 }
 
-.footer__links a {
+.footer__item a {
+  color: white;
   font-size: 24px;
-  text-decoration: none;
-  color: #ffffff;
 }
 
-.footer__links a:hover {
+.footer__item a:hover {
   color: #30bae7;
-}
-
-.container {
-  max-width: 1441px;
-  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
