@@ -91,6 +91,10 @@ h6 {
 /*-------------------------------------------------------------*/
 /*-----The Foundation------------------------------------------*/
 /*-------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 input::-moz-placeholder {
   color: #ffffff;
 }
@@ -198,6 +202,58 @@ body {
   font-size: 18px;
 }
 
+/*-------------------------------------------------------------*/
+/*-----Header--------------------------------------------------*/
+/*-------------------------------------------------------------*/
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__container {
+  padding: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 20px;
+}
+
+.menu__item a {
+  color: white;
+  font-size: 24px;
+  padding: 5px;
+}
+
+.menu__item a:hover {
+  background-color: #643a79;
+  border-radius: 5px;
+}
+
+/*-------------------------------------------------------------*/
+/*-----Home-------------------------------------------------*/
+/*-------------------------------------------------------------*/
 .block-1 {
   background-color: #87509c;
   height: 597px;
@@ -635,7 +691,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 20px 50px;
+  gap: 40px 50px;
 }
 
 .reviews__item {

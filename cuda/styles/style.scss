@@ -5,6 +5,10 @@
 /*-----The Foundation------------------------------------------*/
 /*-------------------------------------------------------------*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 input::-moz-placeholder {
   color: #ffffff;
 }
@@ -101,6 +105,45 @@ body {
   text-align: center;
   font-size: 18px;
 }
+
+/*-------------------------------------------------------------*/
+/*-----Header--------------------------------------------------*/
+/*-------------------------------------------------------------*/
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__container {
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  //justify-content: space-between;
+}
+.menu__item a{
+  color: white;
+  font-size: 24px;
+  padding: 5px;
+  &:hover {
+    background-color: #643a79;
+    border-radius: 5px;
+  }
+}
+/*-------------------------------------------------------------*/
+/*-----Home-------------------------------------------------*/
+/*-------------------------------------------------------------*/
 .block-1 {
   background-color: #87509c;
   height: 597px;
@@ -433,7 +476,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 20px 50px;
+    gap: 40px 50px;
   }
 
   &__item {

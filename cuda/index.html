@@ -86,20 +86,24 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="header__container _container">
+        <img class="header__logo" src="assets/img/logo_1X.png" />
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="#services">Services</a></li>
+            <li class="menu__item"><a href="#team">Team</a></li>
+            <li class="menu__item"><a href="#skills">Skills</a></li>
+            <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
+            <li class="menu__item"><a href="#reviews">Reviews</a></li>
+            <li class="menu__item"><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <div class="_wrapper">
       <div class="block-1">
-        <div class="block-1__header">
-          <div class="block-1__logo">
-            <img src="assets/img/logo_1X.png" />
-          </div>
-          <div class="block-1__menu">
-            <div class="block-1__item"><a href="#">Home</a></div>
-            <div class="block-1__item"><a href="#">About</a></div>
-            <div class="block-1__item"><a href="#">Work</a></div>
-            <div class="block-1__item"><a href="#">Blog</a></div>
-            <div class="block-1__item"><a href="#">Contact</a></div>
-          </div>
-        </div>
         <span class="block-1__text">
           Hi there! We are the new kids on the block and we build awesome
           websites and mobile apps.
@@ -113,7 +117,7 @@
         </div>
       </div>
       <main class="page">
-        <section class="page__services services">
+        <section id="services" class="page__services services">
           <div class="services__container _container">
             <h2 class="services__title _title">Services we provide</h2>
             <h3 class="services__subtitle _subtitle">
@@ -157,7 +161,7 @@
           </div>
         </section>
 
-        <section class="page__team team">
+        <section id="team" class="page__team team">
           <div class="team__container _container">
             <h2 class="team__title _title">Meet our beautiful team</h2>
             <h3 class="team__subtitle _subtitle">
@@ -267,7 +271,7 @@
           </div>
         </section>
 
-        <section class="page__skills skills">
+        <section id="skills" class="page__skills skills">
           <div class="skills__container _container">
             <h2 class="skills__title _title">We got skills!</h2>
             <h3 class="skills__subtitle _subtitle">
@@ -308,7 +312,7 @@
           </div>
         </section>
 
-        <section class="page__portfolio portfolio">
+        <section id="portfolio" class="page__portfolio portfolio">
           <div class="portfolio__container _container">
             <h2 class="portfolio__title _title">Our portfolio</h2>
             <h3 class="portfolio__subtitle _subtitle">
@@ -345,7 +349,7 @@
           </div>
         </section>
 
-        <section class="page__reviews reviews">
+        <section id="reviews" class="page__reviews reviews">
           <div class="reviews__container _container">
             <h2 class="reviews__title _title">What people say about us</h2>
             <h3 class="reviews__subtitle _subtitle">
