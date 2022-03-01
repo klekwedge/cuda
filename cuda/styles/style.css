@@ -673,97 +673,74 @@ body {
 }
 
 /*-------------------------------------------------------------*/
-/*-----Form----------------------------------------------------*/
+/*-----Contacts------------------------------------------------*/
 /*-------------------------------------------------------------*/
-.block-7 {
+.contacts {
   background-color: #3c5499;
-  height: 915px;
+  color: #ffffff;
+  padding: 60px 10px;
 }
 
-.block-7__body {
-  max-width: 603px;
+.contacts__subtitle {
+  margin: 0px auto 40px auto;
+  max-width: 700px;
+}
+
+.contacts__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
   margin: 0 auto;
 }
 
-.block-7__header {
-  margin-bottom: 80px;
-}
-
-.block-7__title {
-  color: #ffffff;
-  margin: 0px auto 30px auto;
-  padding-top: 120px;
-}
-
-.block-7__texts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 26px;
-}
-
-.block-7__text-1 {
+.contacts__input {
+  width: 100%;
+  display: block;
+  margin: 0 auto 60px auto;
   font-size: 18px;
   color: #ffffff;
   background-color: #273a71;
-  width: 400px;
-  height: 25px;
-  padding: 23px 0px 20px 26px;
-  margin-left: 30px;
+  padding: 30px;
+  margin-bottom: 20px;
 }
 
-.block-7__text-1:first-child {
-  margin-left: 0px;
-}
-
-.block-7__text-1::after {
-  content: "*";
-  color: red;
-}
-
-.block-7__text-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 87px;
-}
-
-.block-7__big-text {
+.contacts__textarea {
+  width: 100%;
+  display: block;
   resize: none;
-  margin: 0 auto;
-  width: 861px;
-  height: 202px;
+  margin: 0 auto 60px auto;
   color: #ffffff;
-  padding-left: 26px;
-  padding-top: 26px;
+  padding: 20px 20px 80px 20px;
   font-size: 18px;
   background-color: #273a71;
 }
 
-.block-7__block-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (max-width: 640px) {
+  .contacts__textarea {
+    width: 100%;
+  }
 }
 
-.block-7__button {
-  width: 294px;
-  height: 71px;
+.contacts__button {
+  display: block;
+  margin: 0 auto;
+  padding: 25px 70px;
+  border-radius: 5px;
   font-size: 18px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #30bae7;
-  -webkit-transition-duration: 0.8;
-          transition-duration: 0.8;
+  -webkit-transition-duration: 0.4;
+          transition-duration: 0.4;
+  margin-bottom: 50px;
 }
 
-.block-7__button:hover {
+.contacts__button:hover {
   background-color: #17c2a4;
 }
 
