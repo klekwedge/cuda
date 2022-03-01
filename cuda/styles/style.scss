@@ -406,78 +406,63 @@ body {
       font-size: 24px;
       text-align: center;
     }
-    .item__image{
+    .item__image {
       @media (max-width: 620px) {
         width: 320px;
       }
     }
-
   }
 }
 
 /*-------------------------------------------------------------*/
-/*-----Review--------------------------------------------------*/
+/*-----reviews--------------------------------------------------*/
 /*-------------------------------------------------------------*/
 
-.block-6 {
+.reviews {
   background-color: #d74680;
-  height: 895px;
-  &__body {
-    max-width: 620px;
-    margin: 0 auto;
-  }
-  &__header {
-    margin-bottom: 74px;
-  }
+  padding: 60px 10px;
+  color: white;
   &__title {
-    color: #ffffff;
-    margin: 0px auto 30px auto;
-    padding-top: 120px;
+
   }
-  &__row {
+
+  &__subtitle {
+  
+  }
+
+  &__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    gap: 20px 50px;
   }
-  &__column {
-    max-width: 472px;
-    flex: 0 1 50%;
-    margin-bottom: 145px;
-    margin-right: 10px;
-  }
-}
 
-.item-6 {
-  &__icon {
+  &__item {
     display: flex;
     align-items: center;
     justify-content: center;
-    float: left;
-  }
-  &__body {
-    margin-left: 140px;
-  }
-  &__text {
-    font-size: 18px;
-    font-style: italic;
-    color: #ffffff;
-    text-align: left;
-    width: 326px;
-    height: 85px;
-    font-size: 16px;
-    margin-bottom: 24px;
-  }
-  &__title {
-    color: #ffffff;
-    font-size: 24px;
-    text-transform: uppercase;
-    text-align: left;
-    margin-bottom: 9px;
-  }
-  &__mini-title {
-    text-align: left;
-    color: #ffdd99;
-    font-size: 16px;
+    gap: 30px 50px;
+    flex-wrap: wrap;
+    flex: 0 1 40%;
+    height: 100%;
+    .item__image {
+      margin-bottom: 20px;
+      flex: 0 1 40%;
+    }
+    .item__info{
+      flex: 0 1 40%;
+    }
+    .item__title {
+      margin: 0px 0px 20px 0px;
+    }
+    .item__subtitle {
+      color: #ffdd99;
+      margin-bottom: 15px;
+    }
+    .item__text {
+      margin-bottom: 30px;
+    }
   }
 }
 

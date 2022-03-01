@@ -615,49 +615,30 @@ body {
 }
 
 /*-------------------------------------------------------------*/
-/*-----Review--------------------------------------------------*/
+/*-----reviews--------------------------------------------------*/
 /*-------------------------------------------------------------*/
-.block-6 {
+.reviews {
   background-color: #d74680;
-  height: 895px;
+  padding: 60px 10px;
+  color: white;
 }
 
-.block-6__body {
-  max-width: 620px;
-  margin: 0 auto;
-}
-
-.block-6__header {
-  margin-bottom: 74px;
-}
-
-.block-6__title {
-  color: #ffffff;
-  margin: 0px auto 30px auto;
-  padding-top: 120px;
-}
-
-.block-6__row {
+.reviews__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 20px 50px;
 }
 
-.block-6__column {
-  max-width: 472px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  margin-bottom: 145px;
-  margin-right: 10px;
-}
-
-.item-6__icon {
+.reviews__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,36 +648,39 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  float: left;
+  gap: 30px 50px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  height: 100%;
 }
 
-.item-6__body {
-  margin-left: 140px;
+.reviews__item .item__image {
+  margin-bottom: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
 }
 
-.item-6__text {
-  font-size: 18px;
-  font-style: italic;
-  color: #ffffff;
-  text-align: left;
-  width: 326px;
-  height: 85px;
-  font-size: 16px;
-  margin-bottom: 24px;
+.reviews__item .item__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
 }
 
-.item-6__title {
-  color: #ffffff;
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: left;
-  margin-bottom: 9px;
+.reviews__item .item__title {
+  margin: 0px 0px 20px 0px;
 }
 
-.item-6__mini-title {
-  text-align: left;
+.reviews__item .item__subtitle {
   color: #ffdd99;
-  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.reviews__item .item__text {
+  margin-bottom: 30px;
 }
 
 /*-------------------------------------------------------------*/
