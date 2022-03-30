@@ -1,484 +1,385 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuda</title>
-    <link rel="stylesheet" href="styles/style.css" />
 
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="assets/favicon/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="assets/favicon/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="assets/favicon/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="assets/favicon/apple-icon-76x76.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="assets/favicon/apple-icon-114x114.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="assets/favicon/apple-icon-120x120.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="144x144"
-      href="assets/favicon/apple-icon-144x144.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="assets/favicon/apple-icon-152x152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-icon-180x180.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="assets/favicon/android-icon-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="96x96"
-      href="assets/favicon/favicon-96x96.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/favicon/manifest.json" />
-    <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta
-      name="msapplication-TileImage"
-      content="assets/favicon/ms-icon-144x144.png"
-    />
-    <meta name="theme-color" content="#ffffff" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuda</title>
+  <link rel="stylesheet" href="styles/style.css" />
 
-  <body>
-    <div class="_wrapper">
-      <header class="header">
-        <div class="header__container _container">
-          <img class="header__logo" src="assets/img/logo_1X.png" />
-          <nav class="header__menu menu">
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="assets/favicon/manifest.json" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png" />
+  <meta name="theme-color" content="#ffffff" />
+</head>
+
+<body>
+  <div class="_wrapper">
+    <header class="header">
+      <div class="header__container _container">
+        <div class="header__menu menu">
+          <img class="menu__logo" src="assets/img/logo.png" alt='logo' />
+          <nav class="menu__body">
             <ul class="menu__list">
-              <li class="menu__item"><a href="#services">Services</a></li>
-              <li class="menu__item"><a href="#team">Team</a></li>
-              <li class="menu__item"><a href="#skills">Skills</a></li>
-              <li class="menu__item"><a href="#portfolio">Portfolio</a></li>
-              <li class="menu__item"><a href="#reviews">Reviews</a></li>
-              <li class="menu__item"><a href="#contacts">Contacts</a></li>
+              <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+              <li class="menu__item"><a class="menu__link" href="#team">Team</a></li>
+              <li class="menu__item"><a class="menu__link" href="#skills">Skills</a></li>
+              <li class="menu__item"><a class="menu__link" href="#portfolio">Portfolio</a></li>
+              <li class="menu__item"><a class="menu__link" href="#reviews">Reviews</a></li>
+              <li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a></li>
             </ul>
           </nav>
+          <div class="menu__icon">
+            <span></span>
+          </div>
         </div>
-      </header>
-      <main class="page">
-        <section class="page__home home">
-          <div class="home__container _container">
-            <h1 class="home__title">
-              Hi there! We are the new kids on the block and we build awesome
-              websites and mobile apps.
-            </h1>
-            <button class="home__button _btn">WORK WITH US!</button>
-          </div>
-        </section>
+      </div>
+    </header>
+    <main class="page">
+      <section class="page__home home">
+        <div class="home__container _container">
+          <h1 class="home__title">
+            Hi there! We are the new kids on the block and we build awesome
+            websites and mobile apps.
+          </h1>
+          <button class="home__button _btn">WORK WITH US!</button>
+        </div>
+      </section>
 
-        <section id="services" class="page__services services">
-          <div class="services__container _container">
-            <h2 class="services__title _title">Services we provide</h2>
-            <h3 class="services__subtitle _subtitle">
-              We are working with both individuals and businesses from all over
-              the globe to create awesome websites and applications.
-            </h3>
-            <ul class="services__list">
-              <li class="services__item item">
-                <img class="item__image" src="assets/img/1.png" />
-                <h4 class="item__title">Branding</h4>
-                <p class="item__text">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh.
-                </p>
-              </li>
-
-              <li class="services__item item">
-                <img class="item__image" src="assets/img/2.png" />
-                <h4 class="item__title">Design</h4>
-                <p class="item__text">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                </p>
-              </li>
-              <li class="services__item item">
-                <img class="item__image" src="assets/img/3.png" />
-                <h4 class="item__title">Development</h4>
-                <p class="item__text">
-                  At vero eos et accusamus et iusto odio dignissimos qui
-                  blanditiis praesentium.
-                </p>
-              </li>
-              <li class="services__item item">
-                <img class="item__image" src="assets/img/4.png" />
-                <h4 class="item__title">Rocket science</h4>
-                <p class="item__text">
-                  Et harum quidem rerum est et expedita distinctio. Nam libero
-                  tempore.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="team" class="page__team team">
-          <div class="team__container _container">
-            <h2 class="team__title _title">Meet our beautiful team</h2>
-            <h3 class="team__subtitle _subtitle">
-              We are a small team of designers and developers, who help brand
-            </h3>
-            <ul class="team__list">
-              <li class="team__item item">
-                <img class="item__image" src="assets/img/Base.png" />
-                <h4 class="item__title">Anne Hathaway</h4>
-                <h5 class="item__subtitle">CEO / Marketing Guru</h5>
-                <p class="item__text">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
-                </p>
-                <div class="item__links">
-                  <a href="https://www.facebook.com/" target="_blank">
-                    <img src="assets/img/icon_1.png"
-                  /></a>
-                  <a href="https://twitter.com/?lang=ru" target="_blank"
-                    ><img src="assets/img/icon_2.png"
-                  /></a>
-                  <a href="https://ru.linkedin.com/" target="_blank"
-                    ><img src="assets/img/icon_3.png"
-                  /></a>
-                  <a
-                    href="https://www.google.com/intl/ru/gmail/about/"
-                    target="_blank"
-                    ><img src="assets/img/icon_4.png"
-                  /></a>
-                </div>
-              </li>
-
-              <li class="team__item item">
-                <img class="item__image" src="assets/img/Base.png" />
-                <h4 class="item__title">Kate Upton</h4>
-                <h5 class="item__subtitle">Creative Director</h5>
-                <p class="item__text">
-                  Duis aute irure dolor in in voluptate velit esse cillum dolore
-                  fugiat nulla pariatur. Excepteur sint occaecat non diam
-                  proident.
-                </p>
-                <div class="item__links">
-                  <a href="https://twitter.com/?lang=ru" target="_blank"
-                    ><img src="assets/img/icon_2.png"
-                  /></a>
-                  <a href="https://ru.linkedin.com/" target="_blank"
-                    ><img src="assets/img/icon_3.png"
-                  /></a>
-                  <a
-                    href="https://www.google.com/intl/ru/gmail/about/"
-                    target="_blank"
-                    ><img src="assets/img/icon_4.png"
-                  /></a>
-                </div>
-              </li>
-
-              <li class="team__item item">
-                <img class="item__image" src="assets/img/Base.png" />
-                <h4 class="item__title">Olivia Wilde</h4>
-                <h5 class="item__subtitle">Lead Designer</h5>
-                <p class="item__text">
-                  Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit,
-                  sed quia consequuntur magni dolores eos qui ratione voluptatem
-                  nesciunt.
-                </p>
-                <div class="item__links">
-                  <a href="https://www.facebook.com/" target="_blank">
-                    <img src="assets/img/icon_1.png"
-                  /></a>
-                  <a href="https://twitter.com/?lang=ru" target="_blank"
-                    ><img src="assets/img/icon_2.png"
-                  /></a>
-                  <a href="https://ru.linkedin.com/" target="_blank"
-                    ><img src="assets/img/icon_3.png"
-                  /></a>
-                  <a
-                    href="https://www.google.com/intl/ru/gmail/about/"
-                    target="_blank"
-                    ><img src="assets/img/icon_4.png"
-                  /></a>
-                </div>
-              </li>
-
-              <li class="team__item item">
-                <img class="item__image" src="assets/img/Base.png" />
-                <h4 class="item__title">Ashley Greene</h4>
-                <h5 class="item__subtitle">SEO / Developer</h5>
-                <p class="item__text">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam.
-                </p>
-                <div class="item__links">
-                  <a href="https://www.facebook.com/" target="_blank">
-                    <img src="assets/img/icon_1.png"
-                  /></a>
-                  <a href="https://twitter.com/?lang=ru" target="_blank"
-                    ><img src="assets/img/icon_2.png"
-                  /></a>
-                  <a
-                    href="https://www.google.com/intl/ru/gmail/about/"
-                    target="_blank"
-                    ><img src="assets/img/icon_4.png"
-                  /></a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="skills" class="page__skills skills">
-          <div class="skills__container _container">
-            <h2 class="skills__title _title">We got skills!</h2>
-            <h3 class="skills__subtitle _subtitle">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </h3>
-            <ul class="skills__list">
-              <li class="skills__item item">
-                <div class="item__icon">
-                  <div class="circle circle-color-1">90%</div>
-                  <div class="item__progress">90%</div>
-                </div>
-                <h4 class="item__title">Web Design</h4>
-              </li>
-
-              <li class="skills__item item">
-                <div class="item__icon">
-                  <div class="circle circle-color-2">75%</div>
-                  <div class="item__progress">75%</div>
-                </div>
-                <h4 class="item__title">HTML / CSS</h4>
-              </li>
-              <li class="skills__item item">
-                <div class="item__icon">
-                  <div class="circle circle-color-3">70%</div>
-                  <div class="item__progress">70%</div>
-                </div>
-                <h4 class="item__title">GRAPHIC DESIGN</h4>
-              </li>
-              <li class="skills__item item">
-                <div class="item__icon">
-                  <div class="circle circle-color-4">85%</div>
-                  <div class="item__progress">85%</div>
-                </div>
-                <h4 class="item__title">UI / UX</h4>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="portfolio" class="page__portfolio portfolio">
-          <div class="portfolio__container _container">
-            <h2 class="portfolio__title _title">Our portfolio</h2>
-            <h3 class="portfolio__subtitle _subtitle">
-              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
-              consectetur, adipisci velit, sed quia non numquam
-            </h3>
-            <div class="portfolio__buttons">
-              <button class="portfolio__button" type="button">ALL</button>
-              <button class="portfolio__button" type="button">WEB</button>
-              <button class="portfolio__button" type="button">APPS</button>
-              <button class="portfolio__button" type="button">ICONS</button>
-            </div>
-            <ul class="portfolio__list">
-              <li class="portfolio__item item">
-                <img class="item__image" src="assets/img/Works_1.png" />
-                <h4 class="item__title">Isometric Perspective Mock-Up</h4>
-              </li>
-              <li class="portfolio__item item">
-                <img class="item__image" src="assets/img/Works_2.png" />
-                <h4 class="item__title">Time Zone App UI</h4>
-              </li>
-              <li class="portfolio__item item">
-                <img class="item__image" src="assets/img/Works_3.png" />
-                <h4 class="item__title">Viro Media Players UI</h4>
-              </li>
-              <li class="portfolio__item item">
-                <img class="item__image" src="assets/img/Works_4.png" />
-                <h4 class="item__title">Blog / Magazine Flat UI Kit</h4>
-              </li>
-            </ul>
-            <button class="portfolio__special-button _btn"  type="button">
-              LOAD MORE PROJECTS
-            </button>
-          </div>
-        </section>
-
-        <section id="reviews" class="page__reviews reviews">
-          <div class="reviews__container _container">
-            <h2 class="reviews__title _title">What people say about us</h2>
-            <h3 class="reviews__subtitle _subtitle">
-              We are a small team of designers and developers, who help brand
-            </h3>
-            <ul class="reviews__list">
-              <li class="reviews__item item">
-                <img class="item__image" src="assets/img/Base.png" />
-                <div class="item__info">
-                  <p class="item__text">
-                    “Nullam dapibus blandit orci, viverra gravida dui lobortis
-                    eget. Maecenas fringilla urna eu nisl scelerisque.”
-                  </p>
-                  <h4 class="item__title">Chanel Iman</h4>
-                  <h5 class="item__subtitle">CEO of Pinterest</h5>
-                </div>
-              </li>
-
-              <li class="reviews__item item">
-                <img class="item__image" src="assets/img/Base.png" />
-                <div class="item__info">
-                  <p class="item__text">
-                    “Vivamus luctus urna sed urna ultricies ac tempor dui
-                    sagittis. In condimentum facilisis porta.”
-                  </p>
-                  <h4 class="item__title">Adriana Lima</h4>
-                  <h5 class="item__subtitle">Founder of Instagram</h5>
-                </div>
-              </li>
-
-              <li class="reviews__item item">
-                <img class="item__image" src="assets/img/Base.png" />
-                <div class="item__info">
-                  <p class="item__text">
-                    Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit,
-                    sed quia consequuntur magni dolores eos qui ratione
-                    voluptatem nesciunt.
-                  </p>
-                  <h4 class="item__title">Anne Hathaway</h4>
-                  <h5 class="item__subtitle">Lead Designer at Behance</h5>
-                </div>
-              </li>
-
-              <li class="reviews__item item">
-                <img class="item__image" src="assets/img/Base.png" />
-                <div class="item__info">
-                  <p class="item__text">
-                    “Phasellus non purus vel arcu tempor commodo. Fusce semper,
-                    purus vel luctus molestie, risus sem cursus neque.”
-                  </p>
-                  <h4 class="item__title">Emma Stone</h4>
-                  <h5 class="item__subtitle">Co-Founder of Shazam</h5>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="contacts" class="page__contacts contacts">
-          <div class="contacts__container _container">
-            <h2 class="contacts__title _title">Get in touch</h2>
-            <h3 class="contacts__subtitle _subtitle">
-              1600 Pennsylvania Ave NW, Washington, DC 20500, United States of
-              America. Tel: (202) 456-1111
-            </h3>
-            <form action="#" class="contacts__form">
-              <input
-                class="contacts__input"
-                placeholder="Your Name"
-                type="text"
-              />
-              <input
-                class="contacts__input"
-                placeholder="Your Email"
-                type="text"
-              />
-              <textarea
-                class="contacts__textarea"
-                placeholder="Your Message"
-              ></textarea>
-              <button class="contacts__button _btn" type="submit">
-                Send message
-              </button>
-            </form>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="footer__container _container">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+      <section id="services" class="page__services services">
+        <div class="services__container _container">
+          <h2 class="services__title _title">Services we provide</h2>
+          <h3 class="services__subtitle _subtitle">
+            We are working with both individuals and businesses from all over
+            the globe to create awesome websites and applications.
+          </h3>
+          <ul class="services__list">
+            <li class="services__item item">
+              <img class="item__image" src="assets/img/flag.png" alt="flag" />
+              <h4 class="item__title">Branding</h4>
+              <p class="item__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh.
+              </p>
             </li>
-            <li class="footer__item">
-              <a href="https://twitter.com/" target="_blank">Twitter</a>
+
+            <li class="services__item item">
+              <img class="item__image" src="assets/img/crayon.png" alt='crayon' />
+              <h4 class="item__title">Design</h4>
+              <p class="item__text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              </p>
             </li>
-            <li class="footer__item">
-              <a
-                href="https://www.google.com/intl/ru/account/about/"
-                target="_blank"
-                >Google
-              </a>
+            <li class="services__item item">
+              <img class="item__image" src="assets/img/gear.png" alt="gear" />
+              <h4 class="item__title">Development</h4>
+              <p class="item__text">
+                At vero eos et accusamus et iusto odio dignissimos qui
+                blanditiis praesentium.
+              </p>
             </li>
-            <li class="footer__item">
-              <a href="https://ru.linkedin.com" target="_blank">LinkedIn</a>
-            </li>
-            <li class="footer__item">
-              <a href="https://www.behance.net/" target="_blank">Behance</a>
-            </li>
-            <li class="footer__item">
-              <a href="https://dribbble.com/" target="_blank">Dribbble</a>
-            </li>
-            <li class="footer__item">
-              <a href="https://github.com/" target="_blank">GitHub</a>
+            <li class="services__item item">
+              <img class="item__image" src="assets/img/rocket.png" alt='rocket' />
+              <h4 class="item__title">Rocket science</h4>
+              <p class="item__text">
+                Et harum quidem rerum est et expedita distinctio. Nam libero
+                tempore.
+              </p>
             </li>
           </ul>
         </div>
-      </footer>
-    </div>
-    <script>
-      var Circle = function (sel) {
-        var circles = document.querySelectorAll(sel);
-        [].forEach.call(circles, function (el) {
-          var valEl = parseFloat(el.innerHTML);
-          valEl = (valEl * 408) / 100;
-          el.innerHTML =
-            '<svg width="160" height="160"><circle transform="rotate(-90)" r="65" cx="-80" cy="80" /><circle transform="rotate(-90)" style="stroke-dasharray:' +
-            valEl +
-            'px 408px;" r="65" cx="-80" cy="80" /></svg>';
-        });
-      };
-      Circle(".circle");
-    </script>
-  </body>
+      </section>
+
+      <section id="team" class="page__team team">
+        <div class="team__container _container">
+          <h2 class="team__title _title">Meet our beautiful team</h2>
+          <h3 class="team__subtitle _subtitle">
+            We are a small team of designers and developers, who help brand
+          </h3>
+          <ul class="team__list">
+            <li class="team__item item">
+              <img class="item__image" src="assets/img/big-circle.png" alt='circle' />
+              <h4 class="item__title">Anne Hathaway</h4>
+              <h5 class="item__subtitle">CEO / Marketing Guru</h5>
+              <p class="item__text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna.
+              </p>
+              <div class="item__links">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="assets/img/facebook-icon.png" alt='Facebook icon' /></a>
+                <a href="https://twitter.com/?lang=ru" target="_blank"><img src="assets/img/twitter-icon.png"
+                    alt='Twitter icon' /></a>
+                <a href="https://ru.linkedin.com/" target="_blank"><img src="assets/img/linkedin-icon.png"
+                    alt='LinkedIn icon' /></a>
+                <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank"><img
+                    src="assets/img/mail-icon.png" alt='Mail icon' /></a>
+              </div>
+            </li>
+
+            <li class="team__item item">
+              <img class="item__image" src="assets/img/big-circle.png" alt='circle' />
+              <h4 class="item__title">Kate Upton</h4>
+              <h5 class="item__subtitle">Creative Director</h5>
+              <p class="item__text">
+                Duis aute irure dolor in in voluptate velit esse cillum dolore
+                fugiat nulla pariatur. Excepteur sint occaecat non diam
+                proident.
+              </p>
+              <div class="item__links">
+                <a href="https://twitter.com/?lang=ru" target="_blank"><img src="assets/img/twitter-icon.png"
+                    alt='Twitter icon' /></a>
+                <a href="https://ru.linkedin.com/" target="_blank"><img src="assets/img/linkedin-icon.png"
+                    alt='LinkedIn icon' /></a>
+                <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank"><img
+                    src="assets/img/mail-icon.png" alt='Mail icon' /></a>
+              </div>
+            </li>
+
+            <li class="team__item item">
+              <img class="item__image" src="assets/img/big-circle.png" alt='circle' />
+              <h4 class="item__title">Olivia Wilde</h4>
+              <h5 class="item__subtitle">Lead Designer</h5>
+              <p class="item__text">
+                Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit,
+                sed quia consequuntur magni dolores eos qui ratione voluptatem
+                nesciunt.
+              </p>
+              <div class="item__links">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="assets/img/facebook-icon.png" alt='Facebook icon' /></a>
+                <a href="https://twitter.com/?lang=ru" target="_blank"><img src="assets/img/twitter-icon.png"
+                    alt='Twitter icon' /></a>
+                <a href="https://ru.linkedin.com/" target="_blank"><img src="assets/img/linkedin-icon.png"
+                    alt='Linkedin icon' /></a>
+                <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank"><img
+                    src="assets/img/mail-icon.png" alt='Mail icon' /></a>
+              </div>
+            </li>
+
+            <li class="team__item item">
+              <img class="item__image" src="assets/img/big-circle.png" alt='circle' />
+              <h4 class="item__title">Ashley Greene</h4>
+              <h5 class="item__subtitle">SEO / Developer</h5>
+              <p class="item__text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam.
+              </p>
+              <div class="item__links">
+                <a href="https://www.facebook.com/" target="_blank">
+                  <img src="assets/img/facebook-icon.png" alt='Facebook icon' /></a>
+                <a href="https://twitter.com/?lang=ru" target="_blank"><img src="assets/img/twitter-icon.png"
+                    alt='Twitter icon' /></a>
+                <a href="https://www.google.com/intl/ru/gmail/about/" target="_blank"><img
+                    src="assets/img/mail-icon.png" alt='Mail icon' /></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="page__skills skills">
+        <div class="skills__container _container">
+          <h2 class="skills__title _title">We got skills!</h2>
+          <h3 class="skills__subtitle _subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h3>
+          <ul class="skills__list">
+            <li class="skills__item item">
+              <div class="item__icon">
+                <div class="circle circle-color-1">90%</div>
+                <div class="item__progress">90%</div>
+              </div>
+              <h4 class="item__title">Web Design</h4>
+            </li>
+
+            <li class="skills__item item">
+              <div class="item__icon">
+                <div class="circle circle-color-2">75%</div>
+                <div class="item__progress">75%</div>
+              </div>
+              <h4 class="item__title">HTML / CSS</h4>
+            </li>
+            <li class="skills__item item">
+              <div class="item__icon">
+                <div class="circle circle-color-3">70%</div>
+                <div class="item__progress">70%</div>
+              </div>
+              <h4 class="item__title">GRAPHIC DESIGN</h4>
+            </li>
+            <li class="skills__item item">
+              <div class="item__icon">
+                <div class="circle circle-color-4">85%</div>
+                <div class="item__progress">85%</div>
+              </div>
+              <h4 class="item__title">UI / UX</h4>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="portfolio" class="page__portfolio portfolio">
+        <div class="portfolio__container _container">
+          <h2 class="portfolio__title _title">Our portfolio</h2>
+          <h3 class="portfolio__subtitle _subtitle">
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+            consectetur, adipisci velit, sed quia non numquam
+          </h3>
+          <div class="portfolio__buttons">
+            <button class="portfolio__button" type="button">ALL</button>
+            <button class="portfolio__button" type="button">WEB</button>
+            <button class="portfolio__button" type="button">APPS</button>
+            <button class="portfolio__button" type="button">ICONS</button>
+          </div>
+          <ul class="portfolio__list">
+            <li class="portfolio__item item">
+              <img class="item__image" src="assets/img/works-1.png" alt='Isometric Perspective Mock-U' />
+              <h4 class="item__title">Isometric Perspective Mock-Up</h4>
+            </li>
+            <li class="portfolio__item item">
+              <img class="item__image" src="assets/img/works-2.png" alt='Time Zone App UI' />
+              <h4 class="item__title">Time Zone App UI</h4>
+            </li>
+            <li class="portfolio__item item">
+              <img class="item__image" src="assets/img/works-3.png" alt='Viro Media Players UI' />
+              <h4 class="item__title">Viro Media Players UI</h4>
+            </li>
+            <li class="portfolio__item item">
+              <img class="item__image" src="assets/img/works-4.png" alt='Blog / Magazine Flat UI Kit' />
+              <h4 class="item__title">Blog / Magazine Flat UI Kit</h4>
+            </li>
+          </ul>
+          <button class="portfolio__special-button _btn" type="button">
+            LOAD MORE PROJECTS
+          </button>
+        </div>
+      </section>
+
+      <section id="reviews" class="page__reviews reviews">
+        <div class="reviews__container _container">
+          <h2 class="reviews__title _title">What people say about us</h2>
+          <h3 class="reviews__subtitle _subtitle">
+            We are a small team of designers and developers, who help brand
+          </h3>
+          <ul class="reviews__list">
+            <li class="reviews__item item">
+              <img class="item__image" src="assets/img/big-circle.png" alt='circle' />
+              <div class="item__info">
+                <p class="item__text">
+                  “Nullam dapibus blandit orci, viverra gravida dui lobortis
+                  eget. Maecenas fringilla urna eu nisl scelerisque.”
+                </p>
+                <h4 class="item__title">Chanel Iman</h4>
+                <h5 class="item__subtitle">CEO of Pinterest</h5>
+              </div>
+            </li>
+
+            <li class="reviews__item item">
+              <img class="item__image" src="assets/img/big-circle.png" alt='circle' />
+              <div class="item__info">
+                <p class="item__text">
+                  “Vivamus luctus urna sed urna ultricies ac tempor dui
+                  sagittis. In condimentum facilisis porta.”
+                </p>
+                <h4 class="item__title">Adriana Lima</h4>
+                <h5 class="item__subtitle">Founder of Instagram</h5>
+              </div>
+            </li>
+
+            <li class="reviews__item item">
+              <img class="item__image" src="assets/img/big-circle.png" alt='circle' />
+              <div class="item__info">
+                <p class="item__text">
+                  Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit,
+                  sed quia consequuntur magni dolores eos qui ratione
+                  voluptatem nesciunt.
+                </p>
+                <h4 class="item__title">Anne Hathaway</h4>
+                <h5 class="item__subtitle">Lead Designer at Behance</h5>
+              </div>
+            </li>
+
+            <li class="reviews__item item">
+              <img class="item__image" src="assets/img/big-circle.png" alt='circle' />
+              <div class="item__info">
+                <p class="item__text">
+                  “Phasellus non purus vel arcu tempor commodo. Fusce semper,
+                  purus vel luctus molestie, risus sem cursus neque.”
+                </p>
+                <h4 class="item__title">Emma Stone</h4>
+                <h5 class="item__subtitle">Co-Founder of Shazam</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contacts" class="page__contacts contacts">
+        <div class="contacts__container _container">
+          <h2 class="contacts__title _title">Get in touch</h2>
+          <h3 class="contacts__subtitle _subtitle">
+            1600 Pennsylvania Ave NW, Washington, DC 20500, United States of
+            America. Tel: (202) 456-1111
+          </h3>
+          <form action="#" class="contacts__form">
+            <input class="contacts__input" placeholder="Your Name" type="text" />
+            <input class="contacts__input" placeholder="Your Email" type="text" />
+            <textarea class="contacts__textarea" placeholder="Your Message"></textarea>
+            <button class="contacts__button _btn" type="submit">
+              Send message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container _container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://www.google.com/intl/ru/account/about/" target="_blank">Google
+            </a>
+          </li>
+          <li class="footer__item">
+            <a href="https://ru.linkedin.com" target="_blank">LinkedIn</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://www.behance.net/" target="_blank">Behance</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://dribbble.com/" target="_blank">Dribbble</a>
+          </li>
+          <li class="footer__item">
+            <a href="https://github.com/" target="_blank">GitHub</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="js/script.js">  </script>
+
+
+</body>
+
 </html>
