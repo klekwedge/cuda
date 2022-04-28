@@ -409,6 +409,7 @@ body._lock {
       -ms-flex-align: center;
           align-items: center;
   min-width: 300px;
+  text-align: center;
 }
 
 .services__item .item__image {
@@ -422,7 +423,7 @@ body._lock {
 
 .services__item .item__text {
   font-size: 16px;
-  line-height: 150%;
+  line-height: 130%;
   margin-bottom: 30px;
   max-width: 200px;
 }
@@ -473,6 +474,7 @@ body._lock {
       -ms-flex: 0 1 20%;
           flex: 0 1 20%;
   height: 100%;
+  text-align: center;
 }
 
 .team__item .item__links {
@@ -518,6 +520,7 @@ body._lock {
   color: #3c4761;
   margin-bottom: 30px;
   font-size: 16px;
+  line-height: 130%;
 }
 
 /*-------------------------------------------------------------*/
@@ -764,14 +767,14 @@ body._lock {
   height: 100%;
 }
 
-.reviews__item .item__image {
+.reviews__item .review__image {
   margin-bottom: 20px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 40%;
           flex: 0 1 40%;
 }
 
-.reviews__item .item__info {
+.reviews__item .review__info {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 40%;
           flex: 0 1 40%;
@@ -779,19 +782,20 @@ body._lock {
   min-width: 300px;
 }
 
-.reviews__item .item__title {
+.reviews__item .review__quote {
+  line-height: 130%;
+  margin-bottom: 30px;
+}
+
+.reviews__item .review__author {
   margin: 0px 0px 20px 0px;
   font-size: 20px;
 }
 
-.reviews__item .item__subtitle {
+.reviews__item .review__position {
   font-size: 18px;
   color: #ffdd99;
   margin-bottom: 15px;
-}
-
-.reviews__item .item__text {
-  margin-bottom: 30px;
 }
 
 /*-------------------------------------------------------------*/

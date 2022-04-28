@@ -291,6 +291,7 @@ body._lock {
     flex-direction: column;
     align-items: center;
     min-width: 300px;
+    text-align: center;
     .item__image {
       margin-bottom: 30px;
     }
@@ -300,7 +301,7 @@ body._lock {
     }
     .item__text {
       font-size: 16px;
-      line-height: 150%;
+      line-height: 130%;
       margin-bottom: 30px;
       max-width: 200px;
     }
@@ -337,6 +338,7 @@ body._lock {
     align-items: center;
     flex: 0 1 20%;
     height: 100%;
+    text-align: center;
     .item__links {
       display: flex;
       align-items: center;
@@ -367,6 +369,7 @@ body._lock {
       color: #3c4761;
       margin-bottom: 30px;
       font-size: 16px;
+      line-height: 130%;
     }
   }
 }
@@ -549,26 +552,32 @@ body._lock {
     flex-wrap: wrap;
     flex: 0 1 40%;
     height: 100%;
-    .item__image {
+
+    .review__image {
       margin-bottom: 20px;
       flex: 0 1 40%;
     }
-    .item__info {
+
+    .review__info {
       flex: 0 1 40%;
       font-size: 16px;
       min-width: 300px;
     }
-    .item__title {
+
+    .review__quote{
+      line-height: 130%;
+      margin-bottom: 30px;
+    }
+
+    .review__author {
       margin: 0px 0px 20px 0px;
       font-size: 20px;
     }
-    .item__subtitle {
+
+    .review__position {
       font-size: 18px;
       color: #ffdd99;
       margin-bottom: 15px;
-    }
-    .item__text {
-      margin-bottom: 30px;
     }
   }
 }
