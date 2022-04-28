@@ -117,6 +117,7 @@ body._lock {
   color: white;
   font-size: 24px;
   padding: 5px 10px;
+  transition: 0.4s;
   &:hover {
     background-color: #643a79;
     border-radius: 5px;
@@ -133,7 +134,7 @@ body._lock {
 }
 
 @media (max-width: 900px) {
-  .menu__logo{
+  .menu__logo {
     z-index: 5;
     position: relative;
   }
@@ -208,8 +209,8 @@ body._lock {
     left: 0;
   }
 
-  .menu__body._active::before{
-    content: '';
+  .menu__body._active::before {
+    content: "";
     position: fixed;
     width: 100%;
     top: 0;
@@ -256,6 +257,7 @@ body._lock {
 
 .home__button {
   background-color: #eb7d4b;
+  transition: 0.4s;
   &:hover {
     background-color: #17c2a4;
   }
@@ -340,6 +342,13 @@ body._lock {
       align-items: center;
       justify-content: center;
       gap: 0px 8px;
+
+      & a {
+        transition: 0.4s;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
     .item__image {
       margin-bottom: 20px;
@@ -474,12 +483,14 @@ body._lock {
     border-radius: 5px;
     color: #000;
     background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
     &:hover {
       background-color: #fff;
     }
   }
   &__special-button {
     background-color: #17c2a4;
+    transition: 0.4s;
     &:hover {
       background-color: #eb7d4b;
     }
@@ -608,6 +619,7 @@ body._lock {
 
   &__button {
     background-color: #30bae7;
+    transition: 0.4s;
     &:hover {
       background-color: #17c2a4;
     }
@@ -635,6 +647,7 @@ body._lock {
 .footer__item a {
   color: white;
   font-size: 24px;
+  transition: 0.4s;
   &:hover {
     color: #30bae7;
   }

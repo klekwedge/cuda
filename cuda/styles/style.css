@@ -224,6 +224,8 @@ body._lock {
   color: white;
   font-size: 24px;
   padding: 5px 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .menu__link:hover {
@@ -308,7 +310,7 @@ body._lock {
     left: 0;
   }
   .menu__body._active::before {
-    content: '';
+    content: "";
     position: fixed;
     width: 100%;
     top: 0;
@@ -355,6 +357,8 @@ body._lock {
 
 .home__button {
   background-color: #eb7d4b;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .home__button:hover {
@@ -482,6 +486,16 @@ body._lock {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0px 8px;
+}
+
+.team__item .item__links a {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.team__item .item__links a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .team__item .item__image {
@@ -644,6 +658,8 @@ body._lock {
   border-radius: 5px;
   color: #000;
   background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .portfolio__button:hover {
@@ -652,6 +668,8 @@ body._lock {
 
 .portfolio__special-button {
   background-color: #17c2a4;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .portfolio__special-button:hover {
@@ -832,6 +850,8 @@ body._lock {
 
 .contacts__button {
   background-color: #30bae7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .contacts__button:hover {
@@ -867,9 +887,10 @@ body._lock {
 .footer__item a {
   color: white;
   font-size: 24px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .footer__item a:hover {
   color: #30bae7;
 }
-/*# sourceMappingURL=style.css.map */
